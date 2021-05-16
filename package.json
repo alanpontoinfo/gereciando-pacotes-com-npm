@@ -2,9 +2,9 @@
 	"author": "Alan Santos",
 	"description": "A project that does something awesome",
 	"name": "fcc-learn-npm-package-json",
-	"keywords": ["Aln Santos","freecodecamp","Aprender para ser um Programador"],
-	"License": "MIT",
-	"Version": "1.0.0",
+	"license": "MIT",
+	"version": "1.0.1",
+	"keywords": ["Alan Santos","freecodecamp","Aprender para ser um Programador"],
 	"dependencies": {
 		"express": "^4.14.0"
 	},

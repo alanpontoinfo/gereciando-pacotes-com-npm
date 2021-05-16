@@ -2,7 +2,7 @@
 	"author": "Alan Santos",
 	"description": "A project that does something awesome",
 	"keywords":["Aln Santos","freecodecamp","Aprender para ser um Programador"],
-	"license": "MIT",
+	"license":"MIT",
 	"name": "fcc-learn-npm-package-json",
 	"dependencies": {
 		"express": "^4.14.0"

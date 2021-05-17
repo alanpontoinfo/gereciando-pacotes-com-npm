@@ -3,9 +3,9 @@
  * the verification process may break
  * ***************************************************/
 
-'use strict';
+//'use strict';
 
-var fs = require('fs');
+//var fs = require('fs');
  var bGround = require('fcc-express-bground');
 var myApp = require('./myApp');
 var express = require('express');
@@ -24,7 +24,7 @@ if (!process.env.DISABLE_XORIGIN) {
   });
 }
 
-app.use('/public', express.static(process.cwd() + '/public'));
+/*app.use('/public', express.static(process.cwd() + '/public'));
 
 app.route('/_api/package.json')
   .get(function(req, res, next) {
@@ -55,7 +55,7 @@ app.use(function(err, req, res, next) {
   }  
 })
 
-/*app.listen(process.env.PORT || 5000, function () {
+app.listen(process.env.PORT || 5000, function () {
   console.log('Node.js listening ...');
 });*/
 

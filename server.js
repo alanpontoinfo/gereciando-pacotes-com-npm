@@ -6,6 +6,8 @@
 'use strict';
 
 var fs = require('fs');
+ var bGround = require('fcc-express-bground');
+var myApp = require('./myApp');
 var express = require('express');
 var app = express();
 
@@ -53,7 +55,12 @@ app.use(function(err, req, res, next) {
   }  
 })
 
-app.listen(process.env.PORT || 5000, function () {
+/*app.listen(process.env.PORT || 5000, function () {
   console.log('Node.js listening ...');
+});*/
+
+var port = process.env.PORT || 3000;
+bGround.setupBackgroundApp(app, myApp, __dirname).listen(port, function(){
+  bGround.log('Node is listening on port '+ port + '...')
 });
 

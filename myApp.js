@@ -6,6 +6,10 @@ bGround.log('Hello World');
 
 console.log('Hello World');
 
+app.get("/", function(req, res){
+res.send("Hello World");
+})
+
 
 
 

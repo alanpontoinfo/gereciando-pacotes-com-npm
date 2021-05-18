@@ -33,8 +33,16 @@ res.json(jsonResponse);
 
 });
 
+function getTheCurrentTimesString(){
+    return new Date().toString();
+}
 
-
+app.get("/now", function(req, res, next){
+    req.time=getTheCurrentTimesString();
+    next();
+}, function(req, res){
+    res.json({time: req.time});
+})
 
 
 

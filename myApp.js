@@ -37,10 +37,10 @@ function getTheCurrentTimesString(){
     return new Date().toString();
 }
 
-app.get("/now", function(req, res, next){
+app.get("/now", (req, res, next)=>{
     req.time=getTheCurrentTimesString();
     next();
-}, function(req, res){
+}, (req, res)=>{
     res.json({time: req.time});
 })
 

@@ -42,7 +42,12 @@ app.get("/now", (req, res, next)=>{
     next();
 }, (req, res)=>{
     res.json({time: req.time});
-})
+});
+
+app.get("/:word/echo", function(req, res){
+   // console.log(req.params);
+res.json({ echo: req.params.word});
+});
 
 
 

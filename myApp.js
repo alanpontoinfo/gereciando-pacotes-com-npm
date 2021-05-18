@@ -50,6 +50,12 @@ res.json({ echo: req.params.word});
 });
 
 
+app.get("/name", (req, res)=>{
+   // console.log(req.query);
+res.json({name : req.query.first + " " + req.query.last});
+});
+
+
 
 
 
